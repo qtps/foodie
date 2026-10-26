@@ -1,0 +1,293 @@
+.home-app-section {
+  display: grid;
+  min-height: 390px;
+  grid-template-columns: 1.25fr .75fr;
+  align-items: center;
+  gap: 48px;
+  margin: 90px 0;
+  padding: 54px clamp(28px, 6vw, 76px);
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(120deg, #fff3ee 0%, #fff8f2 55%, #f9eee5 100%);
+  scroll-margin-top: 24px;
+}
+
+.home-section-eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #dc604a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.home-app-copy h2,
+.home-contact-heading h2 {
+  max-width: 540px;
+  color: #252a35;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 600;
+  letter-spacing: -.045em;
+  line-height: 1.12;
+}
+
+.home-app-copy > p:not(.home-app-demo-note) {
+  max-width: 510px;
+  margin-top: 17px;
+  color: #6e6a68;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.home-app-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.home-app-badge {
+  display: flex;
+  min-width: 165px;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 11px;
+  border: 1px solid #dfd8d3;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.home-app-badge img {
+  width: 31px;
+  height: 31px;
+  object-fit: contain;
+}
+
+.home-app-badge > span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.home-app-badge small {
+  color: #85807d;
+  font-size: 10px;
+}
+
+.home-app-badge strong {
+  color: #252a35;
+  font-size: 13px;
+}
+
+.home-app-demo-note,
+.home-contact-demo-note {
+  margin-top: 13px;
+  color: #8a817c;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.home-app-preview {
+  display: flex;
+  min-height: 290px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-app-phone {
+  position: relative;
+  display: flex;
+  width: 195px;
+  min-height: 330px;
+  align-items: center;
+  flex-direction: column;
+  padding: 33px 18px 20px;
+  border: 7px solid #282b32;
+  border-radius: 32px;
+  background: linear-gradient(160deg, #fff 0%, #fff6f0 100%);
+  box-shadow: 0 24px 48px rgb(66 46 34 / 18%);
+  transform: rotate(5deg) translateY(18px);
+}
+
+.home-app-phone-camera {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 44px;
+  height: 8px;
+  border-radius: 99px;
+  background: #282b32;
+  transform: translateX(-50%);
+}
+
+.home-app-phone-mark {
+  color: #df624b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.home-app-phone-dish {
+  display: grid;
+  width: 112px;
+  height: 112px;
+  margin: 24px 0 16px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffe7d8;
+  font-size: 56px;
+}
+
+.home-app-phone > strong {
+  color: #272b34;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.home-app-phone-caption {
+  margin-top: 9px;
+  color: #777f8c;
+  font-size: 10px;
+}
+
+.home-app-phone-button {
+  margin-top: 18px;
+  padding: 9px 17px;
+  border-radius: 99px;
+  background: tomato;
+  color: white;
+  font-size: 10px;
+}
+
+.home-contact-section {
+  margin: 90px 0;
+  padding: 18px 0 10px;
+  scroll-margin-top: 24px;
+}
+
+.home-contact-heading {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-contact-heading h2 {
+  margin: 0 auto;
+}
+
+.home-contact-heading > p {
+  margin-top: 13px;
+  color: #777f8c;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.home-contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.home-contact-card {
+  display: flex;
+  min-height: 190px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 23px 15px;
+  border: 1px solid #ececf0;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+a.home-contact-card:hover {
+  transform: translateY(-3px);
+  border-color: #f0b5a9;
+  box-shadow: 0 10px 24px rgb(36 26 22 / 7%);
+}
+
+.home-contact-icon {
+  display: grid;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 12px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff1ed;
+  color: #d85b45;
+  font-size: 20px;
+}
+
+.home-contact-label {
+  color: #7b8290;
+  font-size: 12px;
+}
+
+.home-contact-card strong {
+  margin-top: 5px;
+  color: #2d3340;
+  font-size: 16px;
+}
+
+.home-contact-card small {
+  margin-top: 6px;
+  color: #8a909a;
+  font-size: 12px;
+}
+
+.home-contact-demo-note {
+  margin-top: 18px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .home-app-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 64px 0;
+    padding: 36px 28px 0;
+  }
+
+  .home-app-preview {
+    min-height: 230px;
+    align-items: flex-end;
+  }
+
+  .home-app-phone {
+    min-height: 290px;
+    transform: rotate(3deg) translateY(20px);
+  }
+
+  .home-contact-section {
+    margin: 65px 0;
+  }
+
+  .home-contact-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .home-contact-card {
+    min-height: 155px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-app-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .home-app-badges {
+    gap: 8px;
+  }
+
+  .home-app-badge {
+    min-width: 0;
+    flex: 1 1 145px;
+  }
+}
